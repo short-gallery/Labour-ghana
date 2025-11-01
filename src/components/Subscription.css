@@ -1,0 +1,147 @@
+/* --- Page Styling --- */
+.subscription-page {
+  background: linear-gradient(135deg, #1e3a8a, #0f172a);
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* --- Header --- */
+.subscription-header {
+  text-align: center;
+  max-width: 700px;
+  margin-bottom: 3rem;
+}
+
+.subscription-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #f59e0b;
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+}
+
+.subscription-header p {
+  font-size: 1rem;
+  color: #dbeafe;
+  line-height: 1.6;
+}
+
+/* --- Card Layout --- */
+.subscription-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  max-width: 1100px;
+  justify-items: center;
+}
+
+/* --- Individual Card --- */
+.subscription-card {
+  background: linear-gradient(145deg, #ffffff, #f1f5f9);
+  border-radius: 1.2rem;
+  padding: 2rem 1.5rem;
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+  color: #0f172a;
+  transition: all 0.3s ease;
+  transform-origin: center;
+}
+
+.subscription-card:hover {
+  transform: translateY(-5px);
+}
+
+.subscription-card h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+  color: #111827;
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1e3a8a;
+  margin: 0.5rem 0;
+}
+
+.description {
+  font-size: 0.95rem;
+  color: #334155;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+/* --- Button --- */
+.subscribe-btn {
+  border: none;
+  padding: 0.8rem 1.8rem;
+  border-radius: 0.6rem;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 1rem;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.subscribe-btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: skewX(-25deg);
+  transition: left 0.5s ease;
+}
+
+.subscribe-btn:hover::after {
+  left: 125%;
+}
+
+.subscribe-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 1024px) {
+  .subscription-header h1 {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .subscription-header h1 {
+    font-size: 2rem;
+  }
+  .subscription-header p {
+    font-size: 0.95rem;
+  }
+  .subscription-card {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .subscription-page {
+    padding: 2rem 1rem;
+  }
+  .subscription-header h1 {
+    font-size: 1.8rem;
+  }
+  .price {
+    font-size: 1.6rem;
+  }
+}

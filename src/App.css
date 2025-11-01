@@ -1,0 +1,16 @@
+/* App.css */
+
+/* Global styles for your Labour Website */
+/* Add top padding equal to the navbar height */
+body {
+  margin: 0;
+  padding-top: 70px; /* same as navbar height */
+  background-color: #f8f9fa;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+/* Container for all app content */
+.App {
+  text-align: center;
+}

@@ -1,0 +1,188 @@
+.about-page {
+  background: #f9fafb;
+  color: #1e293b;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+/* === Hero Section === */
+.about-hero {
+  background: linear-gradient(135deg, #1e3a8a, #273e9c);
+  color: #fff;
+  text-align: center;
+  padding: 120px 20px 100px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.about-hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.about-hero p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* === Company Overview === */
+.about-content {
+  text-align: center;
+  max-width: 900px;
+  margin: 100px auto;
+  padding: 0 1.5rem;
+}
+
+.about-content h2 {
+  color: #1e3a8a;
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+  font-weight: 700;
+}
+
+.about-content p {
+  color: #475569;
+  line-height: 1.9;
+  font-size: 1.05rem;
+  margin-bottom: 1rem;
+}
+
+/* === Core Values Section === */
+.values-section {
+  background: #eef2ff;
+  padding: 90px 20px;
+  text-align: center;
+}
+
+.values-section h2 {
+  color: #1e3a8a;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.value-card {
+  color: #fff;
+  padding: 2.5rem 1.8rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(30, 58, 138, 0.15);
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.value-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.25);
+}
+
+.value-icon {
+  font-size: 2.6rem;
+  margin-bottom: 1rem;
+}
+
+/* === Unique Card Colors === */
+.value-card.integrity {
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+}
+
+.value-card.innovation {
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+}
+
+.value-card.teamwork {
+  background: linear-gradient(135deg, #10b981, #047857);
+}
+
+.value-card.excellence {
+  background: linear-gradient(135deg, #ef4444, #b91c1c);
+}
+
+/* === Vision Section === */
+.vision-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 100px 8%;
+  background: #fff;
+  gap: 2.5rem;
+}
+
+.vision-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.vision-text h2 {
+  color: #1e3a8a;
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+  font-weight: 700;
+}
+
+.vision-text p {
+  color: #475569;
+  line-height: 1.9;
+  font-size: 1.05rem;
+}
+
+.vision-image {
+  flex: 1;
+  text-align: center;
+}
+
+.vision-image img {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(30, 58, 138, 0.25);
+  animation: float 3s ease-in-out infinite;
+}
+
+/* === Floating Animation === */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .about-hero {
+    padding: 100px 15px 70px;
+  }
+
+  .about-hero h1 {
+    font-size: 2.1rem;
+  }
+
+  .about-content {
+    margin: 60px auto;
+  }
+
+  .vision-section {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 70px 20px;
+  }
+
+  .vision-image img {
+    max-width: 300px;
+  }
+
+  .value-card {
+    padding: 2rem 1.5rem;
+  }
+}

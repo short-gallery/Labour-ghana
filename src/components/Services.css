@@ -1,0 +1,236 @@
+/* 🌈 Animated Hero Section */
+.services-hero {
+  position: relative;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #facc15;
+  text-align: center;
+  overflow: hidden;
+  background: linear-gradient(135deg, #1e3a8a, #273e9c, #0f172a);
+  background-size: 300% 300%;
+  animation: gradientShift 12s ease infinite;
+  padding: 0 1.5rem;
+  margin-top: 70px;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(30, 58, 138, 0.45);
+  backdrop-filter: blur(5px);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  opacity: 0.95;
+}
+
+/* ✨ Floating icons animation */
+.floating-icons {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.float-icon {
+  position: absolute;
+  font-size: 2.5rem;
+  color: rgba(255, 255, 255, 0.25);
+  animation: float 8s ease-in-out infinite;
+}
+
+.icon1 {
+  top: 20%;
+  left: 15%;
+  animation-delay: 0s;
+}
+.icon2 {
+  top: 60%;
+  left: 80%;
+  animation-delay: 2s;
+}
+.icon3 {
+  top: 40%;
+  left: 50%;
+  animation-delay: 4s;
+}
+.icon4 {
+  top: 75%;
+  left: 25%;
+  animation-delay: 6s;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* 🧩 Products Section */
+.products-section {
+  text-align: center;
+  padding: 5rem 1.5rem;
+  background: #f9fafb;
+}
+
+.products-section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 3rem;
+  color: #1e3a8a;
+  font-weight: 700;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.product-card {
+  padding: 2rem;
+  border-radius: 18px;
+  color: white;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  animation: bounceIn 1s ease forwards;
+}
+
+.product-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* 🎨 Unique Colors */
+.education-card {
+  background: linear-gradient(135deg, #2563eb, #1e3a8a);
+}
+.healthcare-card {
+  background: linear-gradient(135deg, #059669, #065f46);
+}
+.sales-card {
+  background: linear-gradient(135deg, #f97316, #ea580c);
+}
+
+.service-icon {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.coming-soon {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #facc15;
+}
+
+/* ✨ Bounce Entrance */
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* ⚙️ Custom Section */
+.custom-section {
+  text-align: center;
+  background: #1e3a8a;
+  color: white;
+  padding: 5rem 1.5rem;
+}
+
+.custom-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #facc15;
+}
+
+.custom-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.custom-section p {
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+  .hero-content p {
+    font-size: 1rem;
+  }
+  .product-card {
+    padding: 1.5rem;
+  }
+  .float-icon {
+    font-size: 1.8rem;
+  }
+}
+
+
+
+.custom-btn {
+  background: linear-gradient(90deg, #855805, #90c232);
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+}
+
+.custom-btn:hover {
+  background: #66dd56;
+  transform: scale(1.05);
+}
