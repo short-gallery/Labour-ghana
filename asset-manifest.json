@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Labour-ghana/static/css/main.23e5a90e.css",
+    "main.js": "/Labour-ghana/static/js/main.b1d707d2.js",
+    "static/js/453.6fb16e31.chunk.js": "/Labour-ghana/static/js/453.6fb16e31.chunk.js",
+    "static/media/labourgh.png": "/Labour-ghana/static/media/labourgh.9106f95acaf8d24fce48.png",
+    "index.html": "/Labour-ghana/index.html",
+    "main.23e5a90e.css.map": "/Labour-ghana/static/css/main.23e5a90e.css.map",
+    "main.b1d707d2.js.map": "/Labour-ghana/static/js/main.b1d707d2.js.map",
+    "453.6fb16e31.chunk.js.map": "/Labour-ghana/static/js/453.6fb16e31.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.23e5a90e.css",
+    "static/js/main.b1d707d2.js"
+  ]
+}
