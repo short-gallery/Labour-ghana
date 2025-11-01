@@ -4,14 +4,15 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// ✅ Create the root element for rendering the React app
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+// ✅ Render the App inside React.StrictMode for better debugging
 root.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// ✅ Optional: measure app performance (e.g., log to console or analytics)
+reportWebVitals(console.log);

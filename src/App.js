@@ -9,7 +9,7 @@ import Subscription from "./components/Subscription";
 import Contact from "./components/Contact";
 import LabourEducationalApp from "./components/LabourEducationalApp";
 import Blog from "./components/Blog";
-import Success from "./components/Success"; // 👈 import Success page
+import Success from "./components/Success";
 
 // 👇 Scroll to top component
 const ScrollToTop = () => {
@@ -18,7 +18,7 @@ const ScrollToTop = () => {
   useEffect(() => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth", // makes it scroll smoothly
+      behavior: "smooth",
     });
   }, [pathname]);
 
@@ -27,8 +27,8 @@ const ScrollToTop = () => {
 
 function App() {
   return (
-    <Router>
-      <ScrollToTop /> {/* 👈 Ensures each page starts at top */}
+    <Router basename="/Labour-ghana"> {/* 👈 basename added for GitHub Pages */}
+      <ScrollToTop />
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -38,7 +38,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/labour-educational-app" element={<LabourEducationalApp />} />
         <Route path="/blog" element={<Blog />} />
-        <Route path="/success" element={<Success />} /> {/* ✅ new success page route */}
+        <Route path="/success" element={<Success />} />
       </Routes>
       <Footer />
     </Router>
